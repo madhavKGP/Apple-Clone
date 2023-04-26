@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'SF-regular';
+    src: url(/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: 'SF-bold';
+    src: url(/fonts/SFPRODISPLAYBOLD.OTF);
+}
+
+@font-face {
+    font-family: 'SF-medium';
+    src: url(/fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: "SF-regular";
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 14000;
+    height: 4.4rem;
+    background: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(2rem);
+    width: 100%;
+}
+
+.container {
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 -1rem;
+
+}
+
+.nav-list-mobile{
+    display: none;
+}
+
+.nav-link{
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.799);
+    padding: 0 1rem;
+    transition: color .5s;
+}
+
+.nav-link:hover{
+    color: rgb(255, 255, 255);
+}
+
+.nav-link-apple{
+    width: 1.6rem;
+    height: 4.4rem;
+    background:url(../images/icons/apple.svg) center no-repeat;
+    opacity: .7;
+    transition: opacity .5s;
+}
+
+.nav-link-apple:hover{
+    opacity: 1;
+}
+
+.nav-link-search{
+    width: 1.6rem;
+    height: 4.4rem;
+    background:url(../images/icons/search.svg) center no-repeat;
+    opacity: .7;
+    transition: opacity .5s;
+}
+
+.nav-link-bag{
+    width: 1.4rem;
+    height: 4.4rem;
+    background:url(../images/icons/bag.svg) center no-repeat;
+    opacity: .7;
+    transition: opacity .5s;
+}
