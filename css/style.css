@@ -1,16 +1,7 @@
 @font-face {
     font-family: 'SF-regular';
-    src: url(./fonts/SFPRODISPLAYREGULAR.OTF);
-}
-
-@font-face {
-    font-family: 'SF-bold';
-    src: url(./fonts/SFPRODISPLAYBOLD.OTF);
-}
-
-@font-face {
-    font-family: 'SF-medium';
-    src: url(./fonts/SFPRODISPLAYMEDIUM.OTF);
+    src: url("../fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
+    src:url("../fonts/SFPRODISPLAYREGULAR.ttf") format("truetype");
 }
 
 *,
@@ -308,11 +299,11 @@ a {
         justify-content: center;
     }
 
-    .nav-item-hidden{
+    .nav-item-hidden {
         display: none;
     }
 
-    .mobile-menu{
+    .mobile-menu {
         position: relative;
         z-index: 15000000;
         width: 100%;
@@ -321,6 +312,7 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        cursor: pointer;41
+        cursor: pointer;
+        41
     }
 }
