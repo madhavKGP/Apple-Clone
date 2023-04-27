@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'SF-regular';
     src: url("../fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
-    src:url("../fonts/SFPRODISPLAYREGULAR.ttf") format("truetype");
+    src: url("../fonts/SFPRODISPLAYREGULAR.ttf") format("truetype");
 }
 
 *,
@@ -289,7 +289,9 @@ a {
 
     .nav-list-mobile {
         display: flex;
-
+        justify-content: center;
+        align-items: center;
+        column-gap: 16rem;
     }
 
     .nav-item {
@@ -297,6 +299,7 @@ a {
         height: 4.8rem;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .nav-item-hidden {
@@ -313,6 +316,20 @@ a {
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        41
+    }
+
+    .line {
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background: #fff;
+    }
+
+    .line-top {
+        margin-top: 12px;
+    }
+
+    .line-bottom {
+        margin-top: -.4rem; 
     }
 }
